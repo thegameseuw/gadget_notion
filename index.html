@@ -3,8 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Bonjour</title>
+  <style>
+    .mon-bouton {
+      background-color: blue;
+      color: white;
+      padding: 14px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s; /* Animation */
+    }
+
+    .mon-bouton:hover {
+      background-color: green;
+      transform: scale(1.1); /* Agrandit le bouton de 10% */
+    }
+  </style>
 </head>
 <body>
   <h1>Bonjour</h1>
+  <button class="mon-bouton">Cliquez-moi</button>
 </body>
 </html>
