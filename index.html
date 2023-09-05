@@ -2,26 +2,25 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Bonjour</title>
-  <style>
-    .mon-bouton {
-      background-color: blue;
-      color: white;
-      padding: 14px 20px;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s, transform 0.3s; /* Animation */
-    }
-
-    .mon-bouton:hover {
-      background-color: green;
-      transform: scale(1.1); /* Agrandit le bouton de 10% */
-    }
-  </style>
+  <title>Flashcards à l'infini</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bonjour</h1>
-  <button class="mon-bouton">Cliquez-moi</button>
-  <p>Salut je test</p>
+
+  <h1>Flashcards à l'infini</h1>
+
+  <div class="card">
+    <div class="card-face card-front">
+      <!-- L'information 1 sera ici -->
+    </div>
+    <div class="card-face card-back">
+      <!-- L'information liée sera ici -->
+    </div>
+  </div>
+
+  <button id="next-card">Carte suivante</button>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
