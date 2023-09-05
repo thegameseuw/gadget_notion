@@ -1,3 +1,29 @@
+#card-box {
+  width: 350px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  margin: 50px auto;
+  border: 3px solid #ccc;
+  perspective: 1000px;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  bottom: -250px; /* Initialise les cartes à l'extérieur de la boîte */
+  left: 25px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+
+.card.active {
+  bottom: 25px; /* Fait sortir la carte de la boîte */
+}
+
+/* ... Le reste du code CSS pour les faces de la carte reste le même ... */
 .card {
   width: 300px;
   height: 200px;
